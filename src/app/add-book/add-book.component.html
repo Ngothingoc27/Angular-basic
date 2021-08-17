@@ -1,0 +1,20 @@
+<h1>Thêm sản phẩm</h1>
+<form>
+    <div class="mb-3">
+      <label class="form-label">Book name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="book.title" name="title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="book.price" name="price">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" [(ngModel)]="book.des" name="des">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Author</label>
+        <input type="text" class="form-control" [(ngModel)]="book.author" name="author">
+      </div>
+    <button type="submit" class="btn btn-primary" (click)="onAddBook()">Add book</button>
+  </form>
